@@ -1,6 +1,6 @@
 pipeline{
 
-agent slave1
+agent { node { label 'slave1' } }
 
 tools{
 maven 'maven3.8.3'
